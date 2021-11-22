@@ -89,3 +89,46 @@ db.members.insertOne(
         }
     }
 )
+
+//////  CLASS INSERTS  //////
+db.classes.insertOne(
+    {
+        instructor: ObjectId("619bcf2b9da296c82857de470"),
+        details: {
+            type: "spin",
+            date: 22/11/2021,
+            start_time: "11am",
+            duration: 45,
+            capacity: 25
+        },
+        members: [
+            {member_id: ObjectId("619bfe0c9da296c82857de48")}
+        ]
+    }
+)
+
+//////  PLAN INSERTS  //////
+db.plans.insertOne(
+    {
+        member_id: ObjectId("619bfe0c9da296c82857de48"),
+        end_date: 1/1/2022,
+        macros: {
+            calories: 3250,
+            carbs: 490,
+            fats: 70,
+            protein: 165
+        }, 
+        workout: [
+            {
+                name: "push day",
+                exercises: [
+                    { name: "barbell bench press", sets: 5, reps: 5 },
+                    { name: "incline dumbbell press", sets: 3, reps: 10 },                    
+                    { name: "weighted dips", sets: 3, reps: 8 },                    
+                    { name: "cable chest flies", sets: 3, reps: 5 },                   
+                    { name: "tricep pushdowns", sets: 4, reps: 20 }
+                ]
+            }
+        ]
+    }
+)
