@@ -1,5 +1,3 @@
-// ObjectId("619bcf2b9da296c82857de470")
-// Regular staff, no clients
 db.staff.insertOne(
     {
         first_name: "John",
@@ -11,7 +9,7 @@ db.staff.insertOne(
         },
         address: {
             line_1: "10 Grove Road",
-            county: "Carlow",
+            county: "Waterford",
             eircode: "Y35A932"
         }
     }
@@ -29,43 +27,59 @@ db.staff.insertOne(
         address: {
             line_1: "14 Crescent Drive",
             county: "Waterford",
-            eircode: "Z12A411"
+            eircode: "X91A411"
         },
-        clients: [
-            {client_id: ObjectId("619bfe0c9da296c82857de48")},
-        ]
+        clients: []
+    }
+)
+
+db.staff.insertOne(
+    {
+        first_name: "Liz",
+        last_name: "Russell",
+        dob: 12/11/1999,
+        contact: {
+            email: "foleyjack1234@hotmail.com",
+            number: 0834478671
+        },
+        address: {
+            line_1: "Apt 3, Henrystreet Apartments",
+            county: "Waterford",
+            eircode: "X91AD77"
+        }
     }
 )
 
 db.staff.insertMany(
     [
         {
-            first_name: "",
-            last_name: "",
-            dob: 0/0/0000,
+            first_name: "Ryan",
+            last_name: "Murray",
+            dob: 11/3/1991,
             contact: {
-                email: "",
-                number: 0
+                email: "ryanmurray242@gmail.com",
+                number: 0851299893
             },
             address: {
-                line_1: "",
-                county: "",
-                eircode: ""
+                line_1: "27 The Grange",
+                county: "Waterford",
+                eircode: "X91HKK2"
             }
         },
         {
-            first_name: "",
-            last_name: "",
-            dob: 0/0/0000,
+            first_name: "Jack",
+            last_name: "Foley",
+            dob: 12/11/1999,
             contact: {
-                email: "",
-                number: 0
+                email: "foleyjack1234@hotmail.com",
+                number: 0834478671
             },
             address: {
-                line_1: "",
-                county: "",
-                eircode: ""
+                line_1: "Apt 3, Henrystreet Apartments",
+                county: "Waterford",
+                eircode: "X91AD77"
             }
         },
     ]
 )
+
