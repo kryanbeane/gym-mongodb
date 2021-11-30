@@ -1,4 +1,3 @@
-
 db.classes.insertOne(
     {
         instructor: ObjectId("619bcf2b9da296c82857de470"),

@@ -1,3 +1,4 @@
+// ObjectId("61a6618a32b81c00fc107a41
 db.staff.insertOne(
     {
         first_name: "John",
@@ -15,6 +16,7 @@ db.staff.insertOne(
     }
 )
 
+// ObjectId("61a661a6ab9d06907bc147c7
 db.staff.insertOne(
     {
         first_name: "Adam",
@@ -33,6 +35,7 @@ db.staff.insertOne(
     }
 )
 
+// ObjectId("61a66202ab9d06907bc147c8
 db.staff.insertOne(
     {
         first_name: "Liz",
@@ -50,6 +53,8 @@ db.staff.insertOne(
     }
 )
 
+// ObjectId("61a66221ab9d06907bc147c9
+// ObjectId("61a66221ab9d06907bc147ca
 db.staff.insertMany(
     [
         {
