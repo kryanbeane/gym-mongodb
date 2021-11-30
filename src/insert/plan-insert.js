@@ -1,6 +1,5 @@
 db.plans.insertOne(
     {
-        member_id: ObjectId("619bfe0c9da296c82857de48"),
         end_date: 1/1/2022,
         macros: {
             calories: 3250,
@@ -10,7 +9,7 @@ db.plans.insertOne(
         }, 
         workout: [
             {
-                name: "push day",
+                name: "push day a",
                 exercises: [
                     { name: "barbell bench press", sets: 5, reps: 5 },
                     { name: "incline dumbbell press", sets: 3, reps: 10 },                    

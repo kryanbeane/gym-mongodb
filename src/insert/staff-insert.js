@@ -1,4 +1,4 @@
-// ObjectId("61a6618a32b81c00fc107a41
+// ObjectId("61a67ff65d32725156efdffa")
 db.staff.insertOne(
     {
         first_name: "John",
@@ -16,7 +16,7 @@ db.staff.insertOne(
     }
 )
 
-// ObjectId("61a661a6ab9d06907bc147c7
+// ObjectId("61a67ff65d32725156efdffb")
 db.staff.insertOne(
     {
         first_name: "Adam",
@@ -35,7 +35,7 @@ db.staff.insertOne(
     }
 )
 
-// ObjectId("61a66202ab9d06907bc147c8
+// ObjectId("61a67ff65d32725156efdffc")
 db.staff.insertOne(
     {
         first_name: "Liz",
@@ -49,12 +49,13 @@ db.staff.insertOne(
             line_1: "Apt 3, Henrystreet Apartments",
             county: "Waterford",
             eircode: "X91AD77"
-        }
+        },
+        clients: []
     }
 )
 
-// ObjectId("61a66221ab9d06907bc147c9
-// ObjectId("61a66221ab9d06907bc147ca
+// ObjectId("61a67ff65d32725156efdffd")
+// ObjectId("61a67ff65d32725156efdffe")
 db.staff.insertMany(
     [
         {
