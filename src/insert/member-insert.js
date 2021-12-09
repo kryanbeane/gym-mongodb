@@ -1,4 +1,4 @@
-// ObjectId("61a67f9fab9d06907bc147d0")
+// ObjectId("61a75d69085a9bab1924763d")
 db.members.insertOne(
     {
         first_name: "Bryan",
@@ -10,14 +10,14 @@ db.members.insertOne(
             number: 0851717171
         },
         membership: {
-            expiry_date: 12/5/2022,
+            expiry_date: new Da(2022-05-12),
             type: "year"
         },
         orders : []
     }
 )
 
-// ObjectId("61a67f9fab9d06907bc147d1")
+// ObjectId("61a75d69085a9bab1924763e")
 db.members.insertOne(
     {
         first_name: "Laura",
@@ -29,14 +29,14 @@ db.members.insertOne(
             number: 0837789612
         },
         membership: {
-            expiry_date: 10/1/2022,
+            expiry_date: new Date(2022-01-12),
             type: "direct debit"
         },
         orders : []
     }
 )
 
-// ObjectId("61a67f9fab9d06907bc147d2")
+// ObjectId("61a75d69085a9bab1924763f")
 db.members.insertOne(
     {
         first_name: "James",
@@ -48,14 +48,14 @@ db.members.insertOne(
             number: 0891777652
         },
         membership: {
-            expiry_date: 09/3/2022,
+            expiry_date: new Date(2022-03-09),
             type: "direct debit"
         },
         orders : []
     }
 )
 
-// ObjectId("61a67f9fab9d06907bc147d3")
+// ObjectId("61a75d69085a9bab19247640")
 db.members.insertOne(
     {
         first_name: "Alex",
@@ -67,14 +67,14 @@ db.members.insertOne(
             number: 0862312289
         },
         membership: {
-            expiry_date: 20/12/2021,
+            expiry_date: new Date(2021-12-20),
             type: "month"
         },
         orders : []
     }
 )
 
-// ObjectId("61a67f9fab9d06907bc147d4")
+// ObjectId("61a75d69085a9bab19247641")
 db.members.insertOne(
     {
         first_name: "Marie",
@@ -86,7 +86,7 @@ db.members.insertOne(
             number: 0850017664
         },
         membership: {
-            expiry_date: 6/4/2022,
+            expiry_date: new Date(2022-04-06),
             type: "year"
         },
         orders : []

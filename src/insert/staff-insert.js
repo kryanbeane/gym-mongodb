@@ -1,9 +1,9 @@
-// ObjectId("61a67ff65d32725156efdffa")
+//ObjectId("61a76016085a9bab19247642")
 db.staff.insertOne(
     {
         first_name: "John",
         last_name: "Doe",
-        dob: 25/11/1993,
+        dob: new Date(1993-11-25),
         contact: {
             email: "johndoe43@gmail.com",
             number: 0879188780
@@ -16,12 +16,12 @@ db.staff.insertOne(
     }
 )
 
-// ObjectId("61a67ff65d32725156efdffb")
+//ObjectId("61a76016085a9bab19247643")
 db.staff.insertOne(
     {
         first_name: "Adam",
         last_name: "Jacob",
-        dob: 2/9/1998,
+        dob: new Date(1998-09-02),
         contact: {
             email: "adamjacob123@gmail.com",
             number: 0831818789
@@ -35,12 +35,12 @@ db.staff.insertOne(
     }
 )
 
-// ObjectId("61a67ff65d32725156efdffc")
+//ObjectId("61a76017085a9bab19247644")
 db.staff.insertOne(
     {
         first_name: "Liz",
         last_name: "Russell",
-        dob: 12/11/1999,
+        dob: new Date(1999-11-12),
         contact: {
             email: "foleyjack1234@hotmail.com",
             number: 0834478671
@@ -54,14 +54,14 @@ db.staff.insertOne(
     }
 )
 
-// ObjectId("61a67ff65d32725156efdffd")
-// ObjectId("61a67ff65d32725156efdffe")
+//ObjectId("61a76017085a9bab19247645")
+//ObjectId("61a76017085a9bab19247646")
 db.staff.insertMany(
     [
         {
             first_name: "Ryan",
             last_name: "Murray",
-            dob: 11/3/1991,
+            dob: new Date(1991-03-11),
             contact: {
                 email: "ryanmurray242@gmail.com",
                 number: 0851299893
@@ -75,7 +75,7 @@ db.staff.insertMany(
         {
             first_name: "Jack",
             last_name: "Foley",
-            dob: 12/11/1999,
+            dob: new Date(1999-11-12),
             contact: {
                 email: "foleyjack1234@hotmail.com",
                 number: 0834478671
