@@ -36,7 +36,32 @@ db.staff.updateOne(
     }
 )
 
-// Now do update for a members plan and PT
+db.staff.updateOne(
+    { _id: ObjectId("61a76017085a9bab19247644") },
+    {
+        $push: {
+            clients: ObjectId("61a75d69085a9bab1924763d")
+        }
+    }
+)
+
 db.members.updateOne(
-    {  }
+    { _id: ObjectId("61a75d69085a9bab1924763e") },
+    {
+        $set: {
+            trainer: ObjectId("61a76016085a9bab19247643"),
+            plan: ObjectId("61a769a5085a9bab19247647")
+        }
+    }
+)
+
+
+db.members.updateOne(
+    { _id: ObjectId("61a75d69085a9bab1924763d") },
+    {
+        $set: {
+            trainer: ObjectId("61a76017085a9bab19247644"),
+            plan: ObjectId("61a769b3085a9bab19247648")
+        }
+    }
 )
