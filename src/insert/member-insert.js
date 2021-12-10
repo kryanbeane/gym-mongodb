@@ -10,7 +10,7 @@ db.members.insertOne(
             number: 0851717171
         },
         membership: {
-            expiry_date: new Da(2022-05-12),
+            expiry_date: new Date(2022-05-12),
             type: "year"
         },
         orders : []
